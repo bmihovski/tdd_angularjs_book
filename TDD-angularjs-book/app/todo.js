@@ -4,4 +4,7 @@ angular.module('todo', [])
 		$scope.add = function(item) {
 			$scope.list.push(item);
 		};
+		$scope.delete = function() {
+			$scope.list.pop();
+		}
 	}]);

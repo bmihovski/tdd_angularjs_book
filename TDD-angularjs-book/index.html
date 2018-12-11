@@ -7,6 +7,7 @@
 	<div ng-controller="TodoController">
 	<input ng-model="newTodoItem" />
 	<button ng-click="add(newTodoItem)" id="AddItemButton">Add Item</button>
+	<button ng-click="delete()" id="DeleteItemButton">Delete Item</button>
 		<ul ng-repeat="item in list">
 			<li>{{item}}</li>
 		</ul>
