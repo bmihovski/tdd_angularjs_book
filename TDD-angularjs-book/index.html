@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body ng-app="todo">
+	<div ng-controller="TodoController">
+	<input ng-model="newTodoItem" />
+	<button ng-click="add(newTodoItem)" id="AddItemButton">Add Item</button>
+	<button ng-click="delete()" id="DeleteItemButton">Delete Item</button>
+		<ul ng-repeat="item in list">
+			<li>{{item}}</li>
+		</ul>
+	</div>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="app/todo.js"></script>
+</body>
+</html>
